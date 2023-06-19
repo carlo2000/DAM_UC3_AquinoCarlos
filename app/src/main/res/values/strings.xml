@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">DAM_UC3_CarlosAquino</string>
+    <string name="textCorreo">Correo electrónico</string>
+    <string name="textPassword">Contraseña</string>
+    <string name="btnEntrar">Entrar</string>
+    <string name="checkSesion">No cerrar sesión</string>
+    <string name="textOlvidar">¿Has olvidado tu contraseña?</string>
+    <string name="textRegistre">Regístrate</string>
+    <string name="textGratis">Es gratis (y lo seguirá siendo).</string>
+    <string name="textNombre">Nombre:</string>
+    <string name="textApellido">Apellidos:</string>
+    <string name="textDirCorreo">Tu dirección de correo electrónico:</string>
+    <string name="textPasswordNew">Contraseña nueva:</string>
+    <string name="textSexo">Sexo:</string>
+    <string name="RadioSexoF">Mujer</string>
+    <string name="RadioSexoM">Hombre</string>
+    <string name="textFecha">Fecha de nacimiento:</string>
+    <string name="textInfo">¿Por qué tengo que dar esta informacion?</string>
+    <string name="btnRegistrate">Registrate</string>
+    <string name="textCrearPagina">Crear una página</string>
+    <string name="textCompletar">para un famoso, grupo de musica o empresa</string>
+
+
+</resources>
