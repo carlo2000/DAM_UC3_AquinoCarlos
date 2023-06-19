@@ -7,32 +7,6 @@
     android:background="@drawable/fondo"
     tools:context=".MainActivity">
 
-    <RadioGroup
-        android:id="@+id/radioGroup"
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="@+id/textSexo"
-        app:layout_constraintStart_toStartOf="@+id/editTextPassword2"
-        app:layout_constraintTop_toTopOf="@+id/textSexo">
-
-        <RadioButton
-            android:id="@+id/radioButton2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/RadioSexoM"
-            android:textColor="#000"
-            android:textSize="12sp" />
-
-        <RadioButton
-            android:id="@+id/radioButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/RadioSexoF"
-            android:textColor="#000"
-            android:textSize="12sp" />
-    </RadioGroup>
-
     <TextView
         android:id="@+id/textCorreo"
         android:layout_width="wrap_content"
@@ -64,6 +38,7 @@
         android:ems="10"
         android:inputType="textEmailAddress"
         android:textColor="#000"
+        android:textSize="12sp"
         app:layout_constraintStart_toStartOf="@+id/textCorreo"
         app:layout_constraintTop_toBottomOf="@+id/textCorreo" />
 
@@ -75,6 +50,7 @@
         android:ems="10"
         android:inputType="textPassword"
         android:textColor="#000"
+        android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="@+id/editTextEmail"
         app:layout_constraintStart_toStartOf="@+id/textContraseña"
         app:layout_constraintTop_toTopOf="@+id/editTextEmail" />
@@ -179,7 +155,7 @@
 
     <TextView
         android:id="@+id/textContraseñaNew"
-        android:layout_width="80dp"
+        android:layout_width="60dp"
         android:layout_height="30dp"
         android:layout_marginTop="20dp"
         android:text="@string/textPasswordNew"
@@ -227,6 +203,7 @@
         android:id="@+id/btnRegistrate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="15dp"
         android:backgroundTint="#63BE09"
         android:drawableLeft="@drawable/baseline_send_24"
@@ -262,7 +239,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.30656934" />
+        app:layout_constraintGuide_end="285dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"
@@ -292,11 +269,11 @@
         android:id="@+id/editTextName2"
         android:layout_width="0dp"
         android:layout_height="30dp"
-        android:textColor="#000"
         android:layout_marginStart="10dp"
         android:background="#fff"
         android:ems="10"
         android:inputType="textPersonName"
+        android:textColor="#000"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="@+id/textApellido"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
@@ -307,11 +284,11 @@
         android:id="@+id/editTextEmail2"
         android:layout_width="0dp"
         android:layout_height="30dp"
-        android:textColor="#000"
         android:layout_marginStart="10dp"
         android:background="#fff"
         android:ems="10"
         android:inputType="textEmailAddress"
+        android:textColor="#000"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="@+id/textDirecCorreo"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
@@ -337,15 +314,16 @@
 
     <EditText
         android:id="@+id/editDate2"
-        android:layout_width="70sp"
+        android:layout_width="80dp"
         android:layout_height="30sp"
+        android:layout_marginStart="10dp"
         android:background="#fff"
         android:ems="10"
         android:inputType="date"
         android:textColor="#000"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="@+id/textFechaNaci"
-        app:layout_constraintStart_toStartOf="@+id/radioGroup"
+        app:layout_constraintStart_toEndOf="@+id/textFechaNaci"
         app:layout_constraintTop_toTopOf="@+id/textFechaNaci" />
 
     <ImageView
@@ -380,12 +358,25 @@
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="20dp"
+        android:layout_width="0dp"
         android:layout_height="20dp"
-        android:layout_marginEnd="10dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="100dp"
         app:layout_constraintBottom_toBottomOf="@+id/textFechaNaci"
-        app:layout_constraintEnd_toStartOf="@+id/textFechaNaci"
+        app:layout_constraintEnd_toStartOf="@+id/editDate2"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/textFechaNaci"
         app:srcCompat="@drawable/dias_del_calendario" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:backgroundTint="#fff"
+        android:spinnerMode="dropdown"
+        app:layout_constraintBottom_toBottomOf="@+id/textSexo"
+        app:layout_constraintStart_toEndOf="@+id/textSexo"
+        app:layout_constraintTop_toTopOf="@+id/textSexo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

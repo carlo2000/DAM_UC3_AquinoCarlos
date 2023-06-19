@@ -12,13 +12,15 @@
     <string name="textDirCorreo">Tu dirección de correo electrónico:</string>
     <string name="textPasswordNew">Contraseña nueva:</string>
     <string name="textSexo">Sexo:</string>
-    <string name="RadioSexoF">Mujer</string>
-    <string name="RadioSexoM">Hombre</string>
     <string name="textFecha">Fecha de nacimiento:</string>
     <string name="textInfo">¿Por qué tengo que dar esta informacion?</string>
     <string name="btnRegistrate">Registrate</string>
     <string name="textCrearPagina">Crear una página</string>
     <string name="textCompletar">para un famoso, grupo de musica o empresa</string>
+    <string-array name="Sexo">
+        <item>Mujer</item>
+        <item>Hombre</item>
+    </string-array>
 
 
 </resources>
